@@ -17,13 +17,13 @@ spec:
       containers:
         - name: order-service
           image: ranyabrkumar/order-service:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 3002
           env:
             - name: PORT
               value: "3002"
-            # - name: MONGODB_URI
-            #   value: "mongodb://mongo-service:27017/orders"
+      
           resources:
             requests:
               memory: "128Mi"

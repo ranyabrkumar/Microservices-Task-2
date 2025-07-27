@@ -16,14 +16,13 @@ spec:
     spec:
       containers:
         - name: user-service
-          image: ranyabrkumar/user-service:latest   # Fixed: added space after 'image:'
+          image: ranyabrkumar/user-service:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 3000
           env:
             - name: PORT
               value: "3000"
-            # - name: MONGODB_URI
-            #   value: "mongodb://mongo-service:27017/users"
           resources:
             requests:
               memory: "128Mi"
