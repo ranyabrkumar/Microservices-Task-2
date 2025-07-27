@@ -47,17 +47,19 @@ k8s/
    kubectl apply -f gateway-service/ -n ecom-app
    ```
 
-3. **Apply Ingress (if using Ingress Controller):**
-   ```sh
-   kubectl apply -f ingress/ingress.yaml -n ecom-app
-   ```
 
-4. **Port Forwarding (for local testing):**
+
+3. **Port Forwarding (for local testing):**
    ```sh
    kubectl port-forward svc/user-service 3000:3000 -n ecom-app
    kubectl port-forward svc/product-service 3001:3001 -n ecom-app
    kubectl port-forward svc/order-service 3002:3002 -n ecom-app
    kubectl port-forward svc/gateway-service 3003:3003 -n ecom-app
+   ```
+
+4. **Apply Ingress (if using Ingress Controller):**
+   ```sh
+   kubectl apply -f ingress/ingress.yaml -n ecom-app
    ```
    ---
    ### Local testing:
@@ -80,6 +82,18 @@ k8s/
 ### Logs:
 
 <img width="1497" height="416" alt="image" src="https://github.com/user-attachments/assets/adb1ca90-20fb-44f1-9822-b1b13e7d77bd" />
+
+---
+
+### After applying Ingress :
+
+<img width="967" height="508" alt="image" src="https://github.com/user-attachments/assets/d526b9f9-9e9d-45a9-803b-6cc4376ef116" />
+
+<img width="1049" height="598" alt="image" src="https://github.com/user-attachments/assets/e00f39c3-0609-4cd2-8552-a62b82cec8de" />
+
+<img width="377" height="158" alt="image" src="https://github.com/user-attachments/assets/c5b3b88b-08d3-42e0-a298-198107cd377d" />
+
+<img width="933" height="366" alt="image" src="https://github.com/user-attachments/assets/0a7ef04d-8ed3-4b55-9ed0-4221b5982b69" />
 
 
 ## Notes
