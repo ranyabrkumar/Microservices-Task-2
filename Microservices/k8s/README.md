@@ -59,13 +59,28 @@ k8s/
    kubectl port-forward svc/order-service 3002:3002 -n ecom-app
    kubectl port-forward svc/gateway-service 3003:3003 -n ecom-app
    ```
+   ---
+   ### Local testing:
+   
 ![user-service](https://github.com/user-attachments/assets/a2a0b3e5-eea7-455f-960e-c5e128cf8585)
 ![product-service](https://github.com/user-attachments/assets/e963a4c7-d099-4b7f-8645-b42c06e72202)
 ![order-service](https://github.com/user-attachments/assets/3c298b63-c098-4199-9a8f-587f3ff86c08)
 ![gateway-service](https://github.com/user-attachments/assets/8f591d2f-9303-4a27-956a-3e5c87c144de)
+
+---
+
+### Pods ,Service and Ingress :
+
 ![service](https://github.com/user-attachments/assets/cfa7621d-0333-4c57-bef5-6099c8e091a4)
 ![pods-status](https://github.com/user-attachments/assets/6a3576cc-70ce-40d0-8f71-df90a7ca618b)
 ![Ingress-details](https://github.com/user-attachments/assets/cc7f2f4e-1e47-4091-898c-1d9fe2d1f406)
+
+---
+
+### Logs:
+
+<img width="1497" height="416" alt="image" src="https://github.com/user-attachments/assets/adb1ca90-20fb-44f1-9822-b1b13e7d77bd" />
+
 
 ## Notes
 
